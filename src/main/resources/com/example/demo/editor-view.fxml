@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.*?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EditorController">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Open" />
+                <MenuItem text="Save" />
+                <MenuItem text="Close" />
+            </Menu>
+            <Menu text="Settings">
+                <MenuItem text="Theme" onAction="#openThemeDialog"/>
+                <MenuItem text="Text" onAction="#openTextDialog" />
+                <MenuItem text="Editor" />
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane>
+            <TextArea editable="true" prefHeight="1000.0" prefWidth="600.0"  AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+        </AnchorPane>
+    </center>
+
+</BorderPane>

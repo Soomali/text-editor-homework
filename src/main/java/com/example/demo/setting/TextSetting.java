@@ -3,6 +3,10 @@ package com.example.demo.setting;
 import javafx.scene.paint.Color;
 
 public class TextSetting implements Setting {
+    public TextSetting (int fontSize, Color fontColor){
+        fontSize=this.fontSize;
+        fontColor=this.fontColor;
+    }
     public int fontSize;
     public Color fontColor;
 

@@ -6,12 +6,24 @@ public class EditorState implements  Cloneable {
     private String text;
     private String selection;
     //Theme theme
-    private Pair<Double,Double> cursorPos;
+    public String getText(){return this.text;}
+    public  void  setText(String text){
+        this.text=text;
+    }
+    public String getSelection(){return this.selection;}
+    public void setSelection(String selection){
+        this.selection = selection;
+    }
 
-    public EditorState(String text,String selection,Pair<Double,Double> cursorPos) {
+
+
+
+
+
+
+    public EditorState(String text,String selection) {
         this.text = text;
         this.selection = selection;
-        this.cursorPos = cursorPos;
     }
 
 

@@ -1,5 +1,6 @@
 package com.example.demo.setting;
 
+import com.example.demo.editor.EditorCareTaker;
 import javafx.scene.paint.Color;
 
 public class TextSetting implements Setting {
@@ -16,7 +17,7 @@ public class TextSetting implements Setting {
     }
 
     @Override
-    public void Apply() {
+    public void Apply(EditorCareTaker taker) {
 
     }
 }

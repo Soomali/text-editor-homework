@@ -1,9 +1,10 @@
 package com.example.demo.setting;
 
+import com.example.demo.editor.EditorCareTaker;
 import javafx.scene.paint.Color;
 
 public class PalletteSetting implements Setting {
-    PalletteSetting(Color backgraundColor){
+    public PalletteSetting(Color backgraundColor){
         backgraundColor=this.backgroundColor;
 
     }
@@ -15,7 +16,6 @@ public class PalletteSetting implements Setting {
     }
 
     @Override
-    public void Apply() {
-
+    public void Apply(EditorCareTaker taker) {
     }
 }

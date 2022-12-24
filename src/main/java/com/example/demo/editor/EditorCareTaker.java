@@ -10,6 +10,10 @@ public class EditorCareTaker {
     public void undo(){
 
     }
+
+    public void save(){
+        
+    }
     public static EditorCareTaker getInstance() {
         if(instance == null){
             instance = new EditorCareTaker();

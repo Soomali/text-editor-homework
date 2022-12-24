@@ -1,6 +1,10 @@
 package com.example.demo.command;
 
-public abstract class EditorCommand {
+import com.example.demo.editor.EditorCareTaker;
 
+public abstract class EditorCommand {
+     public EditorCareTaker editorCareTaker = new  EditorCareTaker();
+     public EditorCommand(){
+     }
     abstract public void execute();
 }

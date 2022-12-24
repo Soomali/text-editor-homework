@@ -6,6 +6,7 @@ public class UndoCommand extends EditorCommand{
 
     @Override
     public void execute() {
+        this.editorCareTaker.undo();
 
     }
 }

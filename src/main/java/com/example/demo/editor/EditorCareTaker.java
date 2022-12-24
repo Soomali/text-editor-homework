@@ -2,7 +2,13 @@ package com.example.demo.editor;
 
 public class EditorCareTaker {
 
-    Editor editor;
+    private Editor editor;
+    public Editor getEditor() {
+        return this.editor;
+    }
+    public void  setEditor(Editor editor){
+        this.editor = editor;
+    }
 
     private static EditorCareTaker instance = null;
     private EditorCareTaker() {

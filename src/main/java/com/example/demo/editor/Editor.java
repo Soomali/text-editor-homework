@@ -12,11 +12,12 @@ public class Editor implements Memento<EditorState>, Observable {
     }
     @Override
     public EditorState getState() {
-        return null;
+        return this.editorState;
     }
 
     @Override
     public void setState(EditorState state) {
+        this.editorState = state;
 
     }
 

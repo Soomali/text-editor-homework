@@ -4,7 +4,7 @@ public class EditorCareTaker {
 
     //Editor editor
     private static EditorCareTaker instance = null;
-    private EditorCareTaker() {
+    public EditorCareTaker() {
 
     }
     public void undo(){

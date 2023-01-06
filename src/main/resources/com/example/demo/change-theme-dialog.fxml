@@ -19,9 +19,9 @@
             <children>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                 <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
-                    <RadioButton fx:id="LightThemeCheckBox" text="Light">
+                    <RadioButton fx:id="lightThemeRadioButton" text="Light">
                         <toggleGroup>
-                            <ToggleGroup fx:id="group"/>
+                            <ToggleGroup fx:id="toggleGroup"/>
                         </toggleGroup>
                     </RadioButton>
                     <padding>
@@ -29,9 +29,9 @@
                     </padding>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
-                    <RadioButton fx:id="DarkThemeCheckBox" text="Dark">
+                    <RadioButton fx:id="darkThemeRadioButton" text="Dark">
                         <toggleGroup>
-                            <fx:reference source="group"/>
+                            <fx:reference source="toggleGroup"/>
                         </toggleGroup>
                     </RadioButton>
                     <padding>

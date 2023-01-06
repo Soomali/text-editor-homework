@@ -5,24 +5,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.*?>
 <?import javafx.scene.control.Button?>
-<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EditorController">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EditorController">
     <top>
         <MenuBar>
             <Menu text="File">
-                <MenuItem text="Open" />
-                <MenuItem text="Save" />
-                <MenuItem text="Close" />
+                <MenuItem text="Open" onAction="#chooseFile" />
+                <MenuItem text="Save" onAction="#saveToFile"/>
+                <MenuItem text="undo" onAction="#undo" />
             </Menu>
             <Menu text="Settings">
                 <MenuItem text="Theme" onAction="#openThemeDialog"/>
                 <MenuItem text="Text" onAction="#openTextDialog" />
-                <MenuItem text="Editor" />
+                <MenuItem text="Editor" onAction="#openEditorDialog"/>
             </Menu>
         </MenuBar>
     </top>
     <center>
         <AnchorPane>
-            <TextArea editable="true" prefHeight="1000.0" prefWidth="600.0"  AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <TextArea fx:id="mainTextArea"  prefHeight="1000.0" prefWidth="600.0"  AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
         </AnchorPane>
     </center>
 

@@ -1,20 +1,33 @@
 package com.example.demo.setting.theme;
 
-import com.example.demo.setting.PalletteSetting;
+import com.example.demo.editor.EditorCareTaker;
+import com.example.demo.setting.PaletteSetting;
 import com.example.demo.setting.TextSetting;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
 
 public class LightTheme extends Theme {
+    private TextSetting textSetting = new TextSetting(20,Color.BLACK);
+    private PaletteSetting paletteSetting = new PaletteSetting(Color.SNOW);
+    @Override
     public TextSetting getTextSetting(){
-        TextSetting a= new TextSetting(20, Color.BLACK);
-        return a;
+        return textSetting;
     }
 
     @Override
-    public PalletteSetting getPalletteSetting() {
-        PalletteSetting b= new PalletteSetting(Color.SNOW);
-        return null;
+    public PaletteSetting getPaletteSetting() {
+        return paletteSetting;
     }
+
+    @Override
+    public void setTextSetting(TextSetting setting) {
+        this.textSetting = setting;
+    }
+
+    @Override
+    public void setPaletteSetting(PaletteSetting setting) {
+        this.paletteSetting = setting;
+    }
+
+
 
 }
